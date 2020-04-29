@@ -119,4 +119,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 後述のCSSがうまく反映されなかったら、以下を追加する
+#   (https://takeg.hatenadiary.jp/entry/2019/03/08/233648 参照)
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+''' 以下　に変更してみた。’STATICFILES_DIRS？’     '''
+# STATIC_ROOT = os.path.join(BASE_DIR, '/')
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, "static"),
+# )
